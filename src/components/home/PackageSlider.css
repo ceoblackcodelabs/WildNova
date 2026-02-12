@@ -1,0 +1,132 @@
+.package-slider-section {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, #faf7f2, #fff8e7);
+  overflow: hidden;
+}
+
+.slider-container {
+  margin-top: var(--space-xl);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  gap: var(--space-md);
+  animation: slide 40s linear infinite;
+  width: fit-content;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+.package-card {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(198, 164, 63, 0.1);
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(198, 164, 63, 0.3);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.package-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-terracotta));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  padding: var(--space-lg);
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-charcoal);
+}
+
+.card-content p {
+  color: var(--color-charcoal-light);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  font-family: var(--font-display);
+}
+
+.explore-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  transition: gap var(--transition-fast);
+}
+
+.arrow {
+  transition: transform var(--transition-fast);
+}
+
+.package-card:hover .explore-link {
+  gap: 0.5rem;
+}
+
+.package-card:hover .arrow {
+  transform: translateX(5px);
+}
