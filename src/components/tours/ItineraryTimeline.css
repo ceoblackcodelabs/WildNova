@@ -1,0 +1,178 @@
+.itinerary-timeline {
+  position: relative;
+  padding-left: 100px;
+}
+
+.itinerary-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, 
+    rgba(198, 164, 63, 0.2) 0%,
+    rgba(198, 164, 63, 0.8) 50%,
+    rgba(198, 164, 63, 0.2) 100%
+  );
+}
+
+.timeline-day {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.day-marker {
+  position: absolute;
+  left: -100px;
+  width: 80px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.day-number {
+  font-weight: 700;
+  color: #C6A43F;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.marker-dot {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #C6A43F;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(198, 164, 63, 0.3);
+  z-index: 2;
+}
+
+.day-content {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.day-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.day-header h3 {
+  font-size: 1.3rem;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.day-meals {
+  display: flex;
+  gap: 8px;
+}
+
+.meal {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.meal.breakfast {
+  background: #f39c12;
+}
+
+.meal.lunch {
+  background: #27ae60;
+}
+
+.meal.dinner {
+  background: #e74c3c;
+}
+
+.day-description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.day-highlights h4 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.day-highlights ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.day-highlights li {
+  background: #f9f9f9;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  border: 1px solid #eee;
+}
+
+.day-accommodation {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accommodation-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.accommodation-name {
+  color: #C6A43F;
+  font-weight: 600;
+  background: rgba(198, 164, 63, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .itinerary-timeline {
+    padding-left: 60px;
+  }
+  
+  .day-marker {
+    left: -60px;
+    width: 40px;
+  }
+  
+  .day-number {
+    font-size: 0.9rem;
+  }
+}

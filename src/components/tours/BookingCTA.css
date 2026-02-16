@@ -1,0 +1,115 @@
+.booking-cta {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f9f9f9, #fff);
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(198, 164, 63, 0.2);
+}
+
+.cta-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-info p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #C6A43F;
+  font-family: 'Playfair Display', serif;
+}
+
+.price-note {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #C6A43F;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #b38f2e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(198, 164, 63, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #333;
+  border: 2px solid #C6A43F;
+}
+
+.btn-secondary:hover {
+  background: #C6A43F;
+  color: white;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
