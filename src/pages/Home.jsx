@@ -1,5 +1,5 @@
-import Layout from '../components/layouts/Layout';
-import Hero from '../components/Home/Hero';
+import Layout from '/src/components/layouts/Layout';
+import Hero from '/src/components/Home/Hero';
 import AboutSection from '../components/Home/AboutSection';
 import WhyChooseUs from '../components/Home/WhyChooseUs';
 import Gallery from '../components/Home/Gallery';
