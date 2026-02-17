@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Gallery.css';
 
 const Gallery = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useRef(null);
   
   useEffect(() => {
@@ -71,9 +70,8 @@ const Gallery = () => {
           {galleryImages.map((image, index) => (
             <div 
               key={index} 
-              className={`gallery-item reveal ${index === activeIndex ? 'active' : ''}`}
+              className="gallery-item reveal"
               style={{ animationDelay: `${index * 0.1}s` }}
-              onMouseEnter={() => setActiveIndex(index)}
             >
               <div className="gallery-image-wrapper">
                 <img src={image.url} alt={image.title} />
