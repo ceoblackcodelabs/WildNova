@@ -180,7 +180,7 @@ const KenyaTanzaniaSafaris = () => {
         <TourHeader 
           title="Kenya - Tanzania Safaris"
           subtitle="The Ultimate East African Safari Experience"
-          image="/images/kenya-tanzania-hero.jpg"
+          image="/images/package-kenya-tanzania.jpg"
           duration="9 Days / 8 Nights"
           price="$3,200 - $4,500"
           maxGroup="6 people"

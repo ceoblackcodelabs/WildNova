@@ -195,7 +195,7 @@ const TanzaniaSafaris = () => {
         <TourHeader 
           title="Tanzania Safaris"
           subtitle="Discover the Wonders of Tanzania"
-          image="/images/tanzania-hero.jpg"
+          image="/images/package-tanzania.jpg"
           duration="10 Days / 9 Nights"
           price="$3,500 - $4,800"
           maxGroup="6 people"

@@ -114,7 +114,7 @@ const MombasaTours = () => {
         <TourHeader 
           title="Mombasa Tours"
           subtitle="Experience Kenya's Coastal Paradise"
-          image="/images/mombasa-hero.jpg"
+          image="/images/package-mombasa.jpg"
           duration="4 Days / 3 Nights"
           price="$650 - $850"
           maxGroup="8 people"
